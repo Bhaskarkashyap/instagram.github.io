@@ -10,8 +10,8 @@ const MusicPlayer = ({showImage}) => {
         <div   className='flex items-center space-x-4 '>
             <img src={showImage} alt='' className='hidden md:inline h-10 w-10 ' />
       <div className='pointer-events-none'>
-      <h3>Ek Tarfa</h3>
-         <p>Darshan Raval</p>
+      <h3>song</h3>
+         <p>singer</p>
       </div>
         </div>
 

@@ -1,20 +1,20 @@
 export const playlistData = [
     {
         id:1,
-        name:'Darshan Raval',
+        name:'Singer Name',
         imgUrl:'/images/01.jpg',
         songList : [
             {
                id:1.1,
-                songName:'Ek Tarfa',
-                creatorName:'Darshan',
+                songName:'song name',
+                creatorName:'singer',
                 albumName:'Best of 2021',
                 timeDuration:'3:22'
             },
             {  
                 id:1.2,
-                songName:'Jannat ve',
-                creatorName:'Darshan',
+                songName:'song name',
+                creatorName:'singer',
                 albumName:'Best of 2021',
                 timeDuration:'3:22'
             },
@@ -23,21 +23,21 @@ export const playlistData = [
    
     {
         id:2,
-        name:'Lofi Arijit Singh',
+        name:'Singer Name',
         imgUrl:'/images/02.jpg',
         songList : [
             {
                id:1.1,
-                songName:'Tum hi ho',
-                creatorName:'Arijit Singh',
-                albumName:'Arijit Best',
+               songName:'song name',
+                creatorName:'singer',
+                albumName:'album',
                 timeDuration:'4:22'
             },
             {  
                 id:1.2,
-                songName:'Channa Mereya',
-                creatorName:'Arijit Singh',
-                albumName:'Arijit Best',
+                songName:'song name',
+                creatorName:'singer',
+                albumName:'album',
                 timeDuration:'3:22'
             },
         ]
