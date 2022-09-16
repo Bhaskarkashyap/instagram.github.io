@@ -5,7 +5,7 @@ import Sidebar from '../components/MusicHomepagecomp/Sidebar';
 import { playlistData } from '../constant/playlistData';
 
 
-const Music = () => {
+const MusicLogic = () => {
     const [listId , setListId] = useState(0);
     const [showImage , setImage] = useState('');
     const [creatorName , setCreatorName] = useState('');
@@ -15,7 +15,7 @@ useEffect(() => {
     setImage(playlistData[listId].imgUrl)
     setCreatorName(playlistData[listId].name)
     setSongList(playlistData[listId].songList)
-}, [])
+}, [listId])
 
     return (
      <div className=' relative w-full h-screen bg-black overflow-hidden'>
@@ -34,6 +34,6 @@ useEffect(() => {
     )
 }
 
-export default Music
+export default MusicLogic
 
 

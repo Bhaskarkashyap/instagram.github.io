@@ -69,7 +69,7 @@ setColor(shuffle(colors).pop());
             // const {songName , albumName, creatorName, timeDuration , id} = songs;
            return(
                 
-               <Songslist {...songs} key={songs.id} index={index + 1} showImage={showImage} />
+               <Songslist key={songs.id} index={index + 1} showImage={showImage} />
            )
         })}
                 
