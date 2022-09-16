@@ -1,7 +1,7 @@
 export const playlistData = [
     {
         id:1,
-        name:'Singer Name',
+        name:'playlist 1',
         imgUrl:'/images/01.jpg',
         songList : [
             {
@@ -23,7 +23,7 @@ export const playlistData = [
    
     {
         id:2,
-        name:'Singer Name',
+        name:'playlist 2',
         imgUrl:'/images/02.jpg',
         songList : [
             {
