@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 const Showcase = () => {
 
@@ -17,15 +17,16 @@ const Showcase = () => {
                </div>
           <div className="pt-44 pr-4 pb-0 lg:pl-0 w-full pl-10 lg:w-2/3 text-white ">
               <h1 className='text-6xl font-black leading-tight max-w-2xl pb-8'>Play millions of songs and podcasts, for free.</h1>
-           <Link to="/music">
-           go music
-           </Link>
+          
+           <button className="font-bold uppercase
+           py-4 px-12 bg-white text-black rounded-31.25 transform hover:scale-105" >
+            <Link to='/music'>Get spotify free</Link>
+            </button>
+  
           </div>
 
             </div>
             </article>
-            <button className="font-bold uppercase
-     py-4 px-12 bg-white text-black rounded-31.25 transform hover:scale-105" >Get spotify free</button>
         </section>
     )
 }
