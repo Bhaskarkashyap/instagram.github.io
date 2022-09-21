@@ -6,28 +6,28 @@ import { playlistData } from '../constant/playlistData';
 
 
 const Music = () => {
-    const [listId , setListId] = useState(0);
-    const [showImage , setImage] = useState('');
-    const [creatorName , setCreatorName] = useState('');
-    const [songList , setSongList] = useState([]);
+//     const [listId , setListId] = useState(0);
+//     const [showImage , setImage] = useState('');
+//     const [creatorName , setCreatorName] = useState('');
+//     const [songList , setSongList] = useState([]);
 
-useEffect(() => {
-    setImage(playlistData[listId].imgUrl)
-    setCreatorName(playlistData[listId].name)
-    setSongList(playlistData[listId].songList)
-}, [])
+// useEffect(() => {
+//     setImage(playlistData[listId].imgUrl)
+//     setCreatorName(playlistData[listId].name)
+//     setSongList(playlistData[listId].songList)
+// }, [])
 
     return (
      <div className=' relative w-full h-screen bg-black overflow-hidden'>
             <main className='flex'>
-            <Sidebar setListId={setListId} />
-            <Maincontent listId={listId} showImage={showImage} creatorName={creatorName} songList={songList} />
+            <Sidebar />
+            {/* <Maincontent listId={listId} showImage={showImage} creatorName={creatorName} songList={songList} /> */}
         </main>
          
      
 
         <div  className='fixed bottom-0 right-0 left-0'>
-        <MusicPlayer showImage={showImage} />
+        {/* <MusicPlayer showImage={showImage} /> */}
         </div>
 
      </div>
