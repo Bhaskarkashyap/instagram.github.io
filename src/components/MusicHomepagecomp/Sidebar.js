@@ -4,7 +4,7 @@ import { playlistData } from '../../constant/playlistData';
 
 
 
-const Sidebar = () => {
+const Sidebar = ({setListId}) => {
 
     
     return (
@@ -42,7 +42,7 @@ const Sidebar = () => {
                  {/* playlist */}
 
                 {playlistData.map(({id , name} , index) =>(
-                     <p key={id} className='cursor-pointer hover:text-white'>{name}</p>
+                     <p key={id} onClick={() => setListId(index)} className='cursor-pointer hover:text-white'>{name}</p>
                 ))}
             </div>
         </div>

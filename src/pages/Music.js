@@ -15,12 +15,12 @@ useEffect(() => {
     setImage(playlistData[listId].imgUrl)
     setCreatorName(playlistData[listId].name)
     setSongList(playlistData[listId].songList)
-}, [])
+}, [listId])
 
     return (
      <div className=' relative w-full h-screen bg-black overflow-hidden'>
             <main className='flex'>
-            <Sidebar />
+            <Sidebar setListId={setListId}  />
             <Maincontent listId={listId} showImage={showImage} creatorName={creatorName} songList={songList} />
         </main>
          
